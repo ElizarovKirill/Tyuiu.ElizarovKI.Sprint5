@@ -4,11 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using System.IO;
+using Tyuiu.ElizarovKI.Sprint5.Task1.V27.Lib;
 
-using Tyuiu.ElizarovKI.Sprint5.Task0.V24.Lib;
-
-namespace Tyuiu.ElizarovKI.Sprint5.Task0.V24
+namespace Tyuiu.ElizarovKI.Sprint5.Task1.V27
 {
     class Program
     {
@@ -21,29 +19,29 @@ namespace Tyuiu.ElizarovKI.Sprint5.Task0.V24
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #5                                                               *");
             Console.WriteLine("* Тема: Класс File. Запись данных в текстовый файлy                       *");
-            Console.WriteLine("* Задание #0                                                              *");
-            Console.WriteLine("* Вариант #24                                                             *");
+            Console.WriteLine("* Задание #1                                                              *");
+            Console.WriteLine("* Вариант #27                                                             *");
             Console.WriteLine("* Выполнил: Елизаров Кирилл Игоревич | ИИПб-23-2                          *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Дано выражение вычислить его значение при x = 3, результат сохранить в  *");
-            Console.WriteLine("* текстовый файл OutPutFileTask0.txt и вывести на консоль. Округлить до   *");
-            Console.WriteLine("* трёх знаков после запятой.                                              *");
+            Console.WriteLine("* Дана функция                                                            *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            int x = 3;
+            int startValue = -5;
+            int stopValue = 5;
 
-            Console.WriteLine("x = " + x);
+            Console.WriteLine("startValue = " + startValue);
+            Console.WriteLine("stopValue = " + stopValue);
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            string res = ds.SaveToFileTextData(x);
+            string res = ds.SaveToFileTextData(startValue, stopValue);
 
-            Console.WriteLine("Файл: " + res);
+            Console.WriteLine($"Файл:  {res}");
             Console.WriteLine("Создан!");
 
             Console.ReadKey();
